@@ -75,8 +75,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.AJAX.Cnds.OnError,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Button.Acts.SetText,
-		C3.Behaviors.Tween.Cnds.OnTweensFinished
+		C3.JavaScriptInEvents.先看評論_Event2_Act1,
+		C3.Plugins.System.Cnds.OnSignal,
+		C3.Behaviors.Tween.Cnds.OnTweensFinished,
+		C3.JavaScriptInEvents.先看評論_Event23
 	];
 };
 self.C3_JsPropNameTable = [
@@ -115,7 +117,8 @@ self.C3_JsPropNameTable = [
 	{s: 0},
 	{名字: 0},
 	{評論: 0},
-	{星數: 0}
+	{星數: 0},
+	{back: 0}
 ];
 
 self.InstanceType = {

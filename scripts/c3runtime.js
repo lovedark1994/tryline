@@ -1412,7 +1412,7 @@ self.C3_ExpressionFuncs = [
 		() => "20px",
 		() => "注意!您只有一次評論機會",
 		() => "您已填寫過評論",
-		() => "831109",
+		() => "123456",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -1446,8 +1446,7 @@ self.C3_ExpressionFuncs = [
 		() => "OK",
 		() => "傳送成功",
 		() => "傳送失敗",
-		() => "成功",
-		() => "失敗"
+		() => "GAS_LOADED"
 ];
 
 
