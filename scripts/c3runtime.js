@@ -1307,7 +1307,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => and((v0.GetValue() + "?need=1&callback=?&t="), f1());
+			return () => and((v0.GetValue() + "?need=1&callback=cb&t="), f1());
 		},
 		() => "senddata2",
 		p => {
@@ -1316,6 +1316,11 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "",
 		() => "GET",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			return () => and((v0.GetValue() + "?need=1&callback=?&t="), f1());
+		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1431,7 +1436,7 @@ self.C3_ExpressionFuncs = [
 			const v2 = p._GetNode(2).GetVar();
 			const v3 = p._GetNode(3).GetVar();
 			const f4 = p._GetNode(4).GetBoundMethod();
-			return () => and((and(((((((v0.GetValue() + "?need=0") + "&name=") + v1.GetValue()) + "&talk=") + v2.GetValue()) + "&star="), v3.GetValue()) + "&callback=?&t="), f4());
+			return () => and((and(((((((v0.GetValue() + "?need=0") + "&name=") + v1.GetValue()) + "&talk=") + v2.GetValue()) + "&star="), v3.GetValue()) + "&callback=cb&t="), f4());
 		},
 		() => "senddata",
 		p => {
@@ -1440,7 +1445,9 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "OK",
 		() => "傳送成功",
-		() => "傳送失敗"
+		() => "傳送失敗",
+		() => "成功",
+		() => "失敗"
 ];
 
 

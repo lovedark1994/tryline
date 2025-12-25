@@ -75,6 +75,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.AJAX.Cnds.OnError,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Button.Acts.SetText,
 		C3.Behaviors.Tween.Cnds.OnTweensFinished
 	];
 };
