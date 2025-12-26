@@ -1304,61 +1304,13 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "save",
 		() => "data",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => and((v0.GetValue() + "?need=1&callback=cb&t="), f1());
-		},
-		() => "senddata2",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		},
 		() => "",
-		() => "GET",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => and((v0.GetValue() + "?need=1&callback=?&t="), f1());
-		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			const f2 = p._GetNode(2).GetBoundMethod();
-			const f3 = p._GetNode(3).GetBoundMethod();
-			const f4 = p._GetNode(4).GetBoundMethod();
-			const f5 = p._GetNode(5).GetBoundMethod();
-			const f6 = p._GetNode(6).GetBoundMethod();
-			const f7 = p._GetNode(7).GetBoundMethod();
-			return () => f0(f1(), (f2(f3(), "(") + 1), ((f4(f5()) - f6(f7(), "(")) - 2));
-		},
-		() => "1",
-		() => 16,
-		() => 0,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject(".0");
-		},
-		() => 1,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject(".1");
-		},
-		() => 2,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject(".2");
-		},
-		() => 3,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject(".3");
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject();
+			return () => f0();
 		},
 		() => "次",
+		() => 1,
 		() => 5,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1385,15 +1337,41 @@ self.C3_ExpressionFuncs = [
 			const f1 = p._GetNode(1).GetBoundMethod();
 			return () => (n0.ExpObject((f1("次") - 1), 2)).toString();
 		},
+		() => 0,
 		() => "透",
 		() => 100,
+		() => "GAS_LOADED",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
+		() => "1",
+		() => 16,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(".0");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(".1");
+		},
+		() => 2,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(".2");
+		},
+		() => 3,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject(".3");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject();
+		},
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpBehavior("透");
-		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
 		},
 		() => "哼我填好了",
 		() => "我填好了你看",
@@ -1431,22 +1409,13 @@ self.C3_ExpressionFuncs = [
 			return () => ((f0(n1.ExpObject()) - 1)).toString();
 		},
 		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const v1 = p._GetNode(1).GetVar();
-			const v2 = p._GetNode(2).GetVar();
-			const v3 = p._GetNode(3).GetVar();
-			const f4 = p._GetNode(4).GetBoundMethod();
-			return () => and((and(((((((v0.GetValue() + "?need=0") + "&name=") + v1.GetValue()) + "&talk=") + v2.GetValue()) + "&star="), v3.GetValue()) + "&callback=cb&t="), f4());
-		},
-		() => "senddata",
-		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("1");
 		},
 		() => "OK",
 		() => "傳送成功",
-		() => "傳送失敗",
-		() => "GAS_LOADED"
+		() => "senddata",
+		() => "傳送失敗"
 ];
 
 
